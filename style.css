@@ -1,5 +1,23 @@
 header {
-    color:rgb(14, 38, 59);
+    color:rgb(31, 59, 83);
     font-family: Monospace font;
     text-align: center;
 }
+
+nav {
+    float: right;
+}
+
+.nav-items > li {
+    display: inline-block;
+}
+
+.nav-itmes > li > a {
+    line-height: 60px;
+    padding: 0 30px;
+    color: rgb(31, 59, 83);
+}
+
+.nav-items > li > a:hover {
+    color: rgb(70, 119, 161);
+  }
