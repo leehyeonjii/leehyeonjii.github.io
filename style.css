@@ -1,7 +1,7 @@
 header {
     color:rgb(31, 59, 83);
     font-family: Monospace font;
-    text-align: center;
+    display: inline-block;
 }
 
 nav {
