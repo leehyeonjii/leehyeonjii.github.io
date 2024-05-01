@@ -1,3 +1,8 @@
+*{
+  margin: 0 auto;
+  font-family: Monospace font;
+}
+
 header {
     width: 100%;
     height: 60px;
@@ -9,25 +14,71 @@ header {
 
 h1 {
     color:rgb(31, 59, 83);
-    font-family: Monospace font;
+    padding-top: 20px;
 }
 
 nav {
-    font-family: Monospace font;
+    font-size: 1em;
+    font-weight: 400;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
-}
+    text-align: center;
+    padding-top: 20px;
+  }
 
 .nav-items > li {
     display: inline-block;
+    margin-left: 1.5rem;
 }
 
 .nav-items > li > a {
     line-height: 60px;
-    padding: 0 30px;
+    padding: 0 25px;
     color: rgb(31, 59, 83);
     text-decoration: none;
+    padding-bottom: 7px;
   }
 
+/*마우스갖다대면*/
 .nav-items > li > a:hover {
     color: rgb(70, 119, 161);
+    border-bottom: 4px solid rgb(145, 181, 212);
   }
+
+.nav-items > li:first-child >a {
+  border-bottom: 3px solid rgb(31, 59, 83);
+}
+
+
+
+
+/*_________________________*/
+section {
+  padding: 7rem 15rem 2rem; /* 위, 좌우, 아래 여백 설정 */
+  display: flex;
+  flex-direction: row; /* 요소들을 가로로 배치 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+.profile-png {
+  width: 200px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.profile-text {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.profile-text > p {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.profile-text > ul > li {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
