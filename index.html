@@ -3,29 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HJ's BLOG</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>HJ's </title>
   </head>
 
   <body>
     <div id="wrap">
       <header lang="en">
-        <h1>HJ's BLOG</h1>
+        <h1>HJ's Protfolio</h1>
 
-        <nav>
-          <ul class="nav-items">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+        <!--탭메뉴-->
+        <nav class="tab_menu">
+          <ul>
+            <li><a href="#tap" class="on">Home</a></li>
+            <li><a href="#tap">Profile</a></li>
+            <li><a href="#tap">Skills</a></li>
+            <li><a href="#tap">Contact</a></li>
          </ul>
         </nav>
       </header>
     </div>
     
+    <div class="back">
+      <section></section>
+    </div>
+    
     <!--profile-->
-    <section id="Profile">
-      <img class="profile-png" src="computer-engineer.png" alt="profile png">
+    <section id="profile">
+      <img class="profile-png" src="profile.gif" alt="profile png">
       <div class="profile-text">
         <p>이현지</p>
         <ul>
@@ -35,5 +41,14 @@
         </ul>
       </div>
     </section>
+
+    <section id="skills">
+      <div class="skills-container">
+        <div class="#skill-text"><span lang="en">html</span><br>공부중입니다...</div>
+        <div class="#skill-text"><span lang="en">css</span><br>공부중입니다...</div>
+        <div class="#skill-text"><span lang="en">js</span><br>공부중입니다...</div>
+      </div>
+    </section>
+
   </body>
 </html>
