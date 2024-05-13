@@ -1,54 +1,85 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>HJ's </title>
-  </head>
+    <script src="script2.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Rounded" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Twotone" rel="stylesheet">
+    <title>hyeonji's Portfolio</title>
+</head>
+<body>
+    <header>
+        <span class="material-icons">search</span>
+        <p>HJ's Portfolio</p>
+    </header>
 
-  <body>
-    <div id="wrap">
-      <header lang="en">
-        <h1>HJ's Portfolio</h1>
+    <div class="sidebar">
+        <aside class="nav">
+            <li>
+                <span class="material-icons">home</span><a href="#" class="on">Main</a>
+            </li>
+            <li>
+                <span class="material-icons">face</span><a href="#">Profile</a>
+            </li>
+            <li>
+                <span class="material-icons">settings_ethernet</span><a href="#">Skills</a>
+                </li>
+            <li>
+                <span class="material-icons">contacts</span><a href="#">Archive</a>
+            </li>
+        </aside>
+    </div>
 
-        <!--탭메뉴-->
-        <nav class="tab_menu">
-          <ul>
-            <li><a href="#tap" class="on">Home</a></li>
-            <li><a href="#tap">Profile</a></li>
-            <li><a href="#tap">Skills</a></li>
-            <li><a href="#tap">Contact</a></li>
-         </ul>
-        </nav>
-      </header>
+    <div class="home">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8QFM8Ews68c?si=mTbcdJWWkp7fbhj1&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="homepng"></div>
     </div>
-    
-    <div class="back">
-      <section></section>
-    </div>
-    
-    <!--profile-->
-    <section id="profile">
-      <img class="profile-png" src="profile.gif" alt="profile png">
-      <div class="profile-text">
-        <p>이현지</p>
-        <ul>
-          <li>울산대학교 <span lang="en">IT</span>융합학과</li> 
-          <li>울산대학교 정보보안동아리 <span lang="en">UNKNOWN</span></li>
-          <li>개발보안 연합동아리 <span lang="en">DevSe</span></li>
+
+    <div class="profile">
+        <img class="profile-jpg" src="profile2.jpg" alt="profile jpg">
+        <ul lang="ko">
+            <li>
+                <span class="material-icons icon">person</span>
+                <b>이름</b> 이현지
+            </li> 
+            <li>
+                <span class="material-icons icon">cake</span>
+                <b>생년월일</b> 04.02.16
+            </li>
+            <li>
+                <span class="material-icons icon">school</span>
+                <b>학력</b>
+                <br>
+                울산대학교 <span lang="en">IT</span>융합학과 
+                <br> 
+                울산대학교 정보보안동아리 <span lang="en">UNKNOWN</span>
+                <br>
+                개발보안 연합동아리 <span lang="en">DevSe</span>
+            </li> 
         </ul>
-      </div>
-    </section>
+    </div>
 
-    <section id="skills">
-      <div class="skills-container">
-        <div class="#skill-text"><span lang="en">html</span><br>공부중입니다...</div>
-        <div class="#skill-text"><span lang="en">css</span><br>공부중입니다...</div>
-        <div class="#skill-text"><span lang="en">js</span><br>공부중입니다...</div>
-      </div>
-    </section>
+    <div class="skills">
+        <img class="skills-png" src="skills.png" alt="skills png">
 
-  </body>
+        <div class="folderpng">
+            <img class="folder-png" src="folder.png" alt="folder png">
+            <img class="folder-png" src="folder.png" alt="folder png">
+            <img class="folder-png" src="folder.png" alt="folder png">
+        </div>
+
+        <div class="skilltext">
+            <p>공부중입니다...</p>
+            <p>추가될예정...</p>
+            <p>추가될예정...</p>
+        </div>
+    </div>
+    
+
+</body>
 </html>

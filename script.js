@@ -11,58 +11,27 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
-/*탭스크롤이동*/
-document.addEventListener("DOMContentLoaded", function() {
-    const homeLink = document.querySelector(".tab_menu ul li:first-child a"); // Home 탭 메뉴 링크 선택
+document.addEventListener('DOMContentLoaded', function() {
+    const profileLink = document.querySelector('.sidebar .nav li:nth-child(2) a');
 
-    homeLink.addEventListener("click", function(event) {
-        event.preventDefault(); // 기본 링크 동작 방지
+    profileLink.addEventListener('click', function(e) {
+        e.preventDefault();
 
-        const sectionId = ".back"; // 이동할 섹션의 ID
-        const targetSection = document.querySelector(sectionId); // 이동할 섹션 요소 가져오기
-
-        if (targetSection) {
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: "smooth"
-            });
-        }
+        document.querySelector('.profile').scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const profileLink = document.querySelector(".tab_menu ul li:nth-child(2) a"); 
+document.addEventListener('DOMContentLoaded', function() {
+    const profileLink = document.querySelector('.sidebar .nav li:nth-child(3) a');
 
-    profileLink.addEventListener("click", function(event) {
-        event.preventDefault(); 
+    profileLink.addEventListener('click', function(e) {
+        e.preventDefault();
 
-        const sectionId = "#profile";
-        const targetSection = document.querySelector(sectionId); 
-
-        if (targetSection) {
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: "smooth"
-            });
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const profileLink = document.querySelector(".tab_menu ul li:nth-child(3) a"); 
-
-    profileLink.addEventListener("click", function(event) {
-        event.preventDefault(); 
-
-        const sectionId = "#skills";
-        const targetSection = document.querySelector(sectionId); 
-
-        if (targetSection) {
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: "smooth"
-            });
-        }
+        document.querySelector('.skills').scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
 
