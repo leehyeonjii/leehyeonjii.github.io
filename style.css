@@ -96,8 +96,8 @@ section {
   border: 100px solid lightgray;
   color: rgb(31, 59, 83);
   animation-name: move;
-  animation-duration: 1s; /* 애니메이션 지속 시간 설정 */
-  animation-fill-mode: forwards; /* 애니메이션이 종료된 후 상태 유지 */
+  animation-duration: 1s; 
+  animation-fill-mode: forwards; 
 }
 
 
@@ -126,13 +126,9 @@ section {
 
 
 /*skills*/
-p {
-  flex-direction: row;
-}
-
 .skills-container {
-  margin: 20px;
-  padding: 20px;
+  margin: 10px;
+  padding: 0 30px;
   border-radius: 5px;
   background-color: #b5c9d8;
   display: flex;
@@ -140,6 +136,12 @@ p {
   border: none;
   color: #fff;
   animation: none;
+}
+
+.skill-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
