@@ -35,3 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const profileLink = document.querySelector('.sidebar .nav li:nth-child(4) a');
+
+    profileLink.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector('.archive').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+

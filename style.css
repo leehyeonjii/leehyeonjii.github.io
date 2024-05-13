@@ -1,156 +1,292 @@
 *{
-  margin: 0 auto;
-  font-family: Monospace font;
-  user-select: none;
+  margin:0;
+  padding:0;
+  text-decoration: none;
 }
 
+
+/*header*/
 header {
-    width: 100%;
-    height: 60px;
-    z-index: 2000;
-    background-color: #fff;
-    display: inline-block;
-    text-align: center;
-  }
-
-h1 {
-    color:rgb(31, 59, 83);
-    padding-top: 20px;
-    margin-bottom: 0;
-}
-
-/*tab_menu*/
-.tab_menu{
-  position: relative;
-  width: 600px;
+  color: #424242;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 30px auto;
-  background-color: #fff;
+  border: 1px solid #c5c6ca;
+  border-radius: 7px;
+  padding: 5px;
+  margin-left: 390px;
 }
 
-.tab_menu ul{
-  display: flex;
-  list-style-type: none;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
 
-  border-bottom: 1px solid rgb(31, 59, 83);
-  height: 50px;
-
-  
+header p{
+  margin-left: 5px;
 }
 
-.tab_menu ul li{
-  flex: 1;
-  position: relative;
+header .material-icons {
+  font-size: medium;  
 }
 
-.tab_menu ul li a{
-  text-decoration: none;
-  border-left: 0;
-  border-bottom: 0;
-  height: 50px;
-  display: block;
-  font-size: 15px;
-  color: rgb(31, 59, 83);
-  line-height: 50px;
+
+/*body*/
+body{
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdanda, sans-serif;
 }
 
-.tab_menu ul li a.on {
-  border-color: rgb(31, 59, 83);
-  border-top: 2px solid rgb(31, 59, 83);
-  height: 47px;
-  line-height: 47px;
-}
 
-.tab_menu ul li a.on::before{
-  content:"";
-  position: absolute;
-  top: 0;
-  left: -1px;
-  width: 2px;
+/*sidebar*/
+.sidebar{
+  position: fixed;
+  background: #e8e9ee;
+  width: 200px;
   height: 100%;
-}
-
-/*home*/
-.back > section{
-  margin-top: 15px;
-  height: 450px;
-  background: url(https://i.pinimg.com/originals/b0/98/33/b09833472bdae26a0b637ea79fadd09e.gif) fixed;
-  background-size: cover;
-  position: relative;
-  z-index: -1;
-  border: none;
-  animation: none;
-}
-
-/*profile*/
-section {
-  padding: 7rem 15rem 2rem; /* 위, 좌우, 아래 여백 설정 */
-  display: flex;
-  flex-direction: row; /* 요소들을 가로로 배치 */
-  justify-content: center; /*가로 중앙 정렬 */
-  align-items: center; /* 세로 중앙 정렬 */
-  height: auto;
-  background-color: #ffffff;
-  border: 100px solid lightgray;
-  color: rgb(31, 59, 83);
-  animation-name: move;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  user-select: none;
+  list-style-type: none;
+  animation-name: bar;
   animation-duration: 1s; 
   animation-fill-mode: forwards; 
 }
 
+.sidebar aside {
+  margin: 100px 0;
+}
 
-.profile-png {
+.sidebar aside li{
+  margin: 20px auto;
+  padding: 0 40px;
+  margin-top: 30px;
+}
+
+.sidebar aside li a{
+  color: #424242;
+  padding: 10px;
+}
+
+.sidebar aside li span {
+  color: #3b7bdc;
+  transform: translateY(20%);
+}
+
+.sidebar aside li:hover {
+  margin-left: 20px;
+}
+
+
+/*home*/
+.home {
+  position: relative;
+}
+
+.home iframe {
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 440px;
+}
+
+.homepng{
+  margin-left: 320px;
+  width: 800px;
+  height: 700px;
+  background-image: url(https://www.sketchappsources.com/resources/source-image/imac-mockup-facebook.jpg);
+  background-repeat: no-repeat;
+  user-select: none;
+}
+
+.circle{
+  margin-top: 250px;
+  margin-left: 20px;
+  width: 10px;
+  height:10px;
+  background-color: #3b7bdc;
+  border-radius: 50%;
+  position: absolute;
+  animation: movecircle 1.5s infinite;
+  position: absolute;
+  user-select: none;
+}
+
+.circle:nth-child(2){
+  left: 20px;
+  animation-delay: .1s;
+}
+
+.circle:nth-child(3){
+  left: 40px;
+  animation-delay: .2s;
+}
+
+.circle:nth-child(4){
+  left: 60px;
+  animation-delay: .3s;
+}
+
+.circle:nth-child(5){
+  left: 80px;
+  animation-delay: .4s;
+}
+
+.circle:nth-child(6){
+  left: 100px;
+  animation-delay: .5s;
+}
+
+.circle:nth-child(7){
+  left: 120px;
+  animation-delay: .6s;
+}
+
+.circle:nth-child(8){
+  left: 140px;
+  animation-delay: .7s;
+}
+
+
+/*profile*/
+.profile {
+  margin-left: 450px;
+  display: flex;
+  user-select: none;
+  padding-top: 200px;
+}
+
+.profile-jpg {
+  margin-right: 100px;
   width: 200px;
-  height: auto;
-  margin-right: 1rem;
+  height: 280px;
 }
 
-.profile-text {
-  text-align: left;
-  margin-bottom: 1rem;
+.profile ul li{
+  list-style-type: none;
+  margin: 30px;
+  color: #424242;
 }
 
-.profile-text > p {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 2rem;
-}
-
-.profile-text > ul > li {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+.profile ul li .icon {
+  color: #3b7bdc;
 }
 
 
 /*skills*/
-.skills-container {
-  margin: 10px;
-  padding: 0 30px;
-  border-radius: 5px;
-  background-color: #b5c9d8;
-  display: flex;
-  justify-content: space-around;
-  border: none;
-  color: #fff;
-  animation: none;
+.skills {
+  user-select: none;
+  padding-top: 40px;
 }
 
-.skill-text {
+.skillspng{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 250px;
+  z-index: 2;
+  height: 70px;
+  position: absolute;  
+}
+
+.html-png{
+  margin-left: 520px;
+  margin-right: 140px;
+}
+
+.css-png{
+  margin-right: 140px;
+}
+
+.folderpng{
+  margin-left: 480px;
+  margin-top: 200px;
+  user-select: none;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+}
+
+.folder-png {
+  width: 150px;
+  margin-right: 50px;
+}
+
+.skilltext{
+  color: #424242;
+  margin-left: 530px;
+  margin-top: 340px;
+  position: absolute;
+  display: flex;
+}
+
+.skilltext p {
+  margin-right: 170px;
+}
+
+.skillp{
+  margin-left: 400px;
+  margin-top: 400px;
+  color: #424242;
+  background-color: #e8e9ee;
+  border: 1px solid #c5c6ca;
+  border-radius: 7px;
+  padding: 20px;
+  margin-right: 170px;
+}
+
+/*archive*/
+.archive {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  margin-left: 200px;
+}
+
+.archive-text{
+  display:block;
+  margin-left: 50px;
+  color: #424242;
+  z-index: 2;
+}
+
+.archive svg{
+  margin-left: 300px;
+  width: 40px;
+  z-index: 2;
+}
+
+.archiveback{
+  background-image: url(https://www.sketchappsources.com/resources/source-image/browser.png);
+  background-size:70%;
+  background-repeat: no-repeat;
+  user-select: none;
+  margin-top: -150px;
+  margin-left: 200px;
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  z-index: 1;
 }
 
 
-/*_______________*/
-@keyframes move {
+/*______________________________________*/
+@keyframes bar {
   from {
     transform: translateX(-300px);
   }
   to {
     transform: translateX(0px);
+  }
+}
+
+@keyframes movecircle {
+  0% {
+    transform: translate(0,0) scale(1);
+    background-color: #3b7bdc;;
+  }
+  50% {
+    transform: translate(0,50px) scale(0.5);
+    background-color: rgb(0, 255, 170);
+  }
+  100% {
+    transform: translate(0,0) scale(1);
+    background-color: #3b7bdc;
   }
 }
