@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     profileLink.addEventListener('click', function(e) {
         e.preventDefault();
 
-        document.querySelector('.skills').scrollIntoView({
+        document.querySelector('.education').scrollIntoView({
             behavior: 'smooth'
         });
     });
