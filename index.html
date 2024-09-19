@@ -50,9 +50,21 @@
     </div>
 
     <div class="home">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8QFM8Ews68c?si=mTbcdJWWkp7fbhj1&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video
+            onerror="if(!!this.error && this.error.code === 3){this.poster=this.getAttribute('data-gif-url')}" 
+            onloadedmetadata="var z=this;this.play().catch(function(){z.poster=z.getAttribute('data-gif-url')});" 
+            src="https://mblogvideo-phinf.pstatic.net/MjAyMDA3MzBfMjQ5/MDAxNTk2MDM3OTgxODU4.vdRvWzO7Gyxw4zhGmTaCWzIEd2es5DZ8BwXG3XlIyZ0g.RqxK5PkdUkg-KfjGmYLzgj49S8-a9Xw9YIULfKLWRFMg.GIF.tongue_tech_/%EA%B3%B5%EB%B6%803.gif?type=mp4w800" 
+            loop="loop" 
+            muted="muted" 
+            playsinline="" 
+            class="fx _postImage _gifmp4" 
+            data-gif-url="https://mblogthumb-phinf.pstatic.net/MjAyMDA3MzBfMjQ5/MDAxNTk2MDM3OTgxODU4.vdRvWzO7Gyxw4zhGmTaCWzIEd2es5DZ8BwXG3XlIyZ0g.RqxK5PkdUkg-KfjGmYLzgj49S8-a9Xw9YIULfKLWRFMg.GIF.tongue_tech_/%EA%B3%B5%EB%B6%803.gif?type=w210" 
+            id="img">
+        </video>
+
         <div class="homepng"></div>
     </div>
+    
 
     <div class="profile">
         <img class="profile-jpg" src="profile2.jpg" alt="profile jpg">
@@ -69,11 +81,11 @@
                 <span class="material-icons icon">school</span>
                 <b>학력</b>
                 <br>
-                울산대학교 <span lang="en">IT</span>융합학과 
+                • 울산대학교 <span lang="en">IT</span>융합학과 
                 <br> 
-                울산대학교 정보보안동아리 <span lang="en">UNKNOWN</span>
+                • 울산대학교 정보보안동아리 <span lang="en">UNKNOWN</span>
                 <br>
-                개발보안 연합동아리 <span lang="en">DevSe</span>
+                • 개발보안 연합동아리 <span lang="en">DevSe</span>
             </li> 
         </ul>
     </div>

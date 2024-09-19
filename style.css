@@ -12,16 +12,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px auto;
+  margin-top: 30px;
   border: 1px solid #c5c6ca;
-  border-radius: 7px;
-  padding: 5px;
-  margin-left: 32vw;
-}
-
-
-header p{
-  margin-left: 5px;
+  margin-left: 31vw;
+  border-radius: 7px; /*도형둥글게*/
+  padding: 5px; /*내부 공간*/
 }
 
 header .material-icons {
@@ -33,6 +28,7 @@ header .material-icons {
 body{
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdanda, sans-serif;
+
 }
 
 
@@ -50,6 +46,7 @@ body{
   animation-name: bar;
   animation-duration: 1s; 
   animation-fill-mode: forwards; 
+  z-index: 3;
 }
 
 .sidebar aside {
@@ -57,8 +54,9 @@ body{
 }
 
 .sidebar aside li{
-  margin: 20px auto;
+  margin-top: 20px auto;
   padding: 0 40px;
+  padding-right: 0;
   margin-top: 30px;
 }
 
@@ -80,21 +78,33 @@ body{
 
 /*home*/
 .home {
+  margin-left: 200px;
+  justify-content: center;
   position: relative;
+  height: 700px;
 }
 
-.home iframe {
+.home video {
+  width: 560px;
+  height: 315px;
+  z-index: 2;
   position: absolute;
-  margin-top: 75px;
-  margin-left: 38.5vw;}
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .homepng{
-  margin-left: 30vw;
   width: 800px;
   height: 700px;
   background-image: url(https://www.sketchappsources.com/resources/source-image/imac-mockup-facebook.jpg);
   background-repeat: no-repeat;
   user-select: none;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .circle{
