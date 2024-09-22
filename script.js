@@ -23,6 +23,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     const profileLink = document.querySelector('.sidebar .nav li:nth-child(3) a');
+
+//     profileLink.addEventListener('click', function(e) {
+//         e.preventDefault();
+
+//         document.querySelector('.projects').scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
+
 document.addEventListener('DOMContentLoaded', function() {
     const profileLink = document.querySelector('.sidebar .nav li:nth-child(3) a');
 
