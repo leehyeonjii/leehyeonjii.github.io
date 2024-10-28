@@ -207,6 +207,25 @@ body{
   color: #3b7bdc;
 }
 
+/* projects */
+.projects {
+  padding: 100px 0 120px;
+  margin-left: 17vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  user-select: none;
+}
+
+.projects-text {
+  margin-left: +10vw;
+  margin-bottom: 100px;
+  color: #3b7bdc;
+  font-weight: bold;
+  font-size: 60px;
+}
+
 
 /*education*/
 .education {
